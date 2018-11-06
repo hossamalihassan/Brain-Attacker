@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "JosefinSans";
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/JosefinSans-SemiBold.ttf');
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background-color: #8B9DC3;
+}
+
+.header {
+  background-color: #0F7DC2;
+  overflow: hidden;
+  padding-left: 20px;
+  color: #FFF;
+  font-size: 20px;
+  font-family: JosefinSans;
+}
+
+.header p {
+  margin-left: 270px;
+  margin-top: -55px;
+  padding-bottom: 13px;
+  color: #DDD;
+  font-size: 17px;
+}
+
+.path p {
+  background-color: #292F33;
+  overflow: hidden;
+  margin-top: 0;
+  font-weight: bold;
+  padding: 15px;
+  color: #FFF;
+}
+
+.path a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-weight: normal;
+}
+
+.score {
+  margin-left: 20px;
+  font-size: 21px;
+  font-family: JosefinSans;
+}
+
+.question, .score {
+  color: black;
+}
+
+.question p {
+  text-align: center;
+  font-size: 55px;
+  margin-top: 130px;
+  margin-bottom: 10px;
+  font-family: JosefinSans;
+}
+
+.answer {
+  text-align: center;
+}
+
+.answer span {
+  font-size: 30px;
+  font-family: JosefinSans;
+}
+
+.answer input[type="number"] {
+  font-size: 25px;
+  width: 184px;
+  height: 25px;
+  font-family: JosefinSans;
+  padding: 5px;
+}
+
+.answer button {
+  width: 220px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 11px;
+  border: 3px solid #DDD;;
+  cursor: pointer;
+  background-color: #8B9DC3;
+}
+
+.answer button:hover {
+  background-color: #CCC;
+  border-color: #ccc;
+}
+
+.correct {
+  background-color: #66ff66;
+  margin: auto;
+  width: 70%;
+  padding: 15px;
+  text-align: Center;
+  margin-top: 20px;
+  display: none;
+}
+
+.wrong {
+  background-color:  #ff4d4d;
+  margin: auto;
+  width: 70%;
+  padding: 15px;
+  text-align: Center;
+  margin-top: 20px;
+  display: none;
+}
+
+.wrong a {
+  margin-left: 10px;
+}
+
+.total-score {
+  list-style-type: none;
+  padding-top: 100px;
+  color: #222;
+}
+
+.total-score li {
+  padding-bottom: 10px;
+  border: 1px solid #CCC;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+@media(max-width: 768px) {
+  .header p {
+    float: none;
+    text-align: center;
+    margin-top: 0;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  button {
+    margin-bottom: 40px;
+  }
+
+  .wrong, .correct {
+    margin-bottom: 25px;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .total-score {
+    margin: 0;
+    border: none;
+  }
+
+  .total-score li {
+    width: 100px;
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: -30px;
+    margin-left: 30px;
+  }
+}
