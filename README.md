@@ -1,2 +1,2 @@
 # Brain-Attacker
-A Simple Brain Game.
+> A simple brian game made with js
